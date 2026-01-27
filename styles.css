@@ -476,8 +476,15 @@ section {
     line-height: 1.2;
 }
 
+.section-subtitle {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    margin-top: var(--space-sm);
+    line-height: 1.6;
+}
+
 /* ========================================
-   SERVICIOS
+   SERVICIOS PRINCIPALES
    ======================================== */
 .services {
     background-color: var(--color-bg);
@@ -543,6 +550,127 @@ section {
 .service-desc {
     color: var(--color-text-light);
     line-height: 1.7;
+}
+
+/* ========================================
+   SERVICIOS RECURRENTES (NUEVO)
+   ======================================== */
+.services-recurrentes {
+    background-color: var(--color-bg-alt);
+    padding: var(--space-2xl) 0;
+}
+
+.services-recurrentes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card-recurrente {
+    background-color: var(--color-bg);
+    padding: var(--space-xl);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.service-card-recurrente:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-md);
+}
+
+.service-pricing {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    background-color: rgba(37, 99, 235, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+}
+
+.service-card-recurrente h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.service-card-recurrente p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: var(--space-lg);
+}
+
+.service-features li {
+    color: var(--color-text);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.service-time {
+    color: var(--color-success);
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: var(--space-lg);
+    padding: 0.75rem;
+    background-color: rgba(16, 185, 129, 0.1);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.services-note {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding: var(--space-md);
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: var(--radius-lg);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-note p {
+    color: var(--color-text);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.services-note strong {
+    color: var(--color-primary);
+}
+
+.recurrentes-cta {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding: var(--space-xl);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--color-border);
+}
+
+.cta-text {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
 }
 
 /* ========================================
@@ -1135,6 +1263,10 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .services-recurrentes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .why-me-grid {
         grid-template-columns: 1.2fr 0.8fr;
     }
@@ -1166,6 +1298,10 @@ section {
 
 @media (min-width: 1024px) {
     .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-recurrentes-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
@@ -1211,7 +1347,8 @@ section {
     .contact-form-wrapper,
     .step,
     .thanks-card,
-    .thanks-next {
+    .thanks-next,
+    .service-card-recurrente {
         background-color: #1e293b;
     }
 

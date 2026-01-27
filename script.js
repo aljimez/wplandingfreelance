@@ -4,7 +4,7 @@
  */
 
 // ========================================
-// DATOS DE TRADUCCIÓN
+// DATOS DE TRADUCCIÓN (ACTUALIZADO)
 // ========================================
 const translations = {
     es: {
@@ -68,7 +68,7 @@ const translations = {
         'form.submit': 'Pedir cita de diagnóstico gratis',
         'form.security': '🔒 Tu información solo la veo yo. Nada de newsletters automáticos.',
         'form.micro': '¿Prefieres escribirme directo? <a href="mailto:ajimenezal01@gmail.com">ajimenezal01@gmail.com</a> (respondo en 2h)',
-        'footer.legal': '© <span id="year"></span> WPDev. Especialista en WordPress que genera resultados. <a href="#">Política de privacidad</a>',
+        'footer.legal': '© <span id="year"></span> WPDev. Especialista en WordPress que genera resultados. <a href="mailto:ajimenezal01@gmail.com">ajimenezal01@gmail.com</a>',
         'footer.privacy': 'Política de privacidad',
         'thanks.meta.title': 'Mensaje recibido | WPDev',
         'thanks.meta.desc': 'He recibido tu mensaje. Esto es lo que pasa ahora.',
@@ -144,8 +144,8 @@ const translations = {
         'form.consent': 'I agree to be contacted about my project. No spam, promised.',
         'form.submit': 'Book free diagnosis call',
         'form.security': '🔒 Your info is only seen by me. No automated newsletters.',
-        'form.micro': 'Prefer to email me directly? <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a> (I reply in 2h)',
-        'footer.legal': '© <span id="year"></span> WPDev. WordPress specialist that delivers results. <a href="#">Privacy Policy</a>',
+        'form.micro': 'Prefer to email me directly? <a href="mailto:ajimenezal01@gmail.com">ajimenezal01@gmail.com</a> (I reply in 2h)',
+        'footer.legal': '© <span id="year"></span> WPDev. WordPress specialist that delivers results. <a href="mailto:ajimenezal01@gmail.com">ajimenezal01@gmail.com</a>',
         'footer.privacy': 'Privacy Policy',
         'thanks.meta.title': 'Message received | WPDev',
         'thanks.meta.desc': 'I\'ve received your message. Here\'s what happens now.',
@@ -264,7 +264,7 @@ const ScrollAnimations = {
     },
     
     setupRevealAnimations() {
-        const revealElements = document.querySelectorAll('.service-card, .benefit-item, .step, .stat');
+        const revealElements = document.querySelectorAll('.service-card, .service-card-recurrente, .benefit-item, .step, .stat');
         
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, index) => {
