@@ -1302,8 +1302,9 @@ section {
     }
 
     .services-recurrentes-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
 
     .container {
         padding: 0 var(--space-lg);
@@ -1311,6 +1312,12 @@ section {
 
     .process-steps {
         gap: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .services-recurrentes-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
